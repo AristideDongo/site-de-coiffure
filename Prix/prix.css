@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+ font-family: 'Poppins', sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f4f4f4;
+ background-image: url(2.jpg);
+ background-size: cover;
+}
+header{
+ background-color: #8b542762;
+ width: 100%;
+ padding: 5px 0;
+ z-index: 12;
+}
+header .menu {
+ max-width: 1250px;
+ margin: auto;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 20px;
+}
+
+header .menu .logo a{
+ text-decoration: none;
+ color: #fff;
+ font-size: 35px;
+ font-weight: bold;
+}
+.menu ul {
+ display: inline-flex;
+ list-style: none;
+}
+.menu ul li {
+ margin-left: 7px;
+}
+.menu ul li:first-child{
+ margin-left: 0;
+}
+.menu ul li a {
+ text-decoration: none;
+ font-size: 18px;
+ color: #fff;
+ font-weight: 500;
+ padding: 8px 15px;
+ border-radius: 5px;
+ transition: all 0.5s ease;
+}
+.menu ul li a:hover {
+ background-color: #fff;
+ color: black;
+}
+
+.card {
+ background-color: rgba(255, 255, 255, 0.7);
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ padding: 20px;
+ margin-bottom: 20px;
+ margin-top: 25px;
+}
+
+.card h2 {
+ margin-top: 0;
+ color: #333;
+}
+
+.card p {
+ margin-bottom: 10px;
+ color: #f53a01;
+ font-size: 18px;
+}
+footer{
+ flex-direction: column;
+ flex-shrink: 0;
+ width: 100%;
+ background: #8b542762;
+ color: white;
+}
+.content-footer{
+ width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ font-size: 20px;
+ padding: 50px 0 100px;
+}
+.bloc {
+ width: 25%;
+ margin: 0 30px;
+}
+
+/*adresse*/
+
+.footer-adresse h3,
+.footer-horaire h3,
+.footer-social h3 {
+ position: relative;
+ right: -40px;
+ font-size: 25px;
+ padding-bottom: 20px;
+}
+.footer-adresse P{
+ padding: 5px 0;
+}
+/*horaire*/
+
+.liste-horaire,
+.liste-social{
+ list-style-type: none;
+}
+.liste-horaire li{
+ padding: 2px 0;
+}
+.liste-horaire a{
+ text-decoration: none;
+ color: white;
+}
+
+/*social*/
+
+.liste-social img{
+ width: 40px;
+ margin: 10px 50px;
+ 
+}
+
+/*Media querie*/
+
+@media screen and (max-width: 1300px) {
+
+     .content-footer{
+      width: 700px;
+      flex-wrap: wrap;
+     }
+     .bloc{
+      width: 40%;
+      margin: 0 0;
+     }
+     .bloc:nth-child(1),
+     .bloc:nth-child(2){
+      margin-bottom: 50px;
+     }
+
+}
+
+@media screen and (max-width: 800px) {
+     .content-footer{
+      width: 320px;
+     }
+     .bloc{
+      width: 300px;
+      margin: 30px 30px;
+     }
+     .bloc:nth-child(1),
+     .bloc:nth-child(2){
+      margin-bottom:30px;
+     }
+     .bloc:nth-child(1){
+      margin-top: 0;
+     }
+}
